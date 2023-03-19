@@ -224,10 +224,17 @@
         if (colorPage.classList.contains('w3-light-grey')) {
           document.getElementById('colorPage').classList.remove('w3-light-grey')
           document.getElementById('colorPage').classList.add('night')
-          document.getElementById('colorPage').classList.remove('w3-white')
+          if (colorPage.classList.contains('night')){
+            document.getElementsByTagName('div').classList.remove('w3-white')
+            document.getElementsByTagName('div').classList.add('night')
+          }
       } else {
         document.getElementById('colorPage').classList.remove('night')
-        document.getElementById('colorPage').classList.add('w3-light-grey')  
+        document.getElementById('colorPage').classList.add('w3-light-grey')
+        if (colorPage.classList.contains('night')){
+            document.getElementsByTagName('div').classList.remove('night')
+            document.getElementsByTagName('div').classList.add('w3-white')
+          }
       }
       }
     </script>
