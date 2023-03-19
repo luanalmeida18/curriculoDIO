@@ -213,8 +213,15 @@
     
     <script>
       function modeNight() {
-        document.getElementById('colorPage').classList.remove('w3-light-grey')
-        document.getElementById('colorPage').classList.add('bg-dark text-white')
+        var colorPage = document.getElementById('colorPage');
+
+        if (colorPage.classList.contains('w3-light-grey')) {
+          document.getElementById('colorPage').classList.remove('w3-light-grey')
+          document.getElementById('colorPage').classList.add('bg-dark text-white')
+      } else {
+        document.getElementById('colorPage').classList.remove('bg-dark text-white')
+        document.getElementById('colorPage').classList.add('w3-light-grey')  
+      }
       }
     </script>
   </body>
