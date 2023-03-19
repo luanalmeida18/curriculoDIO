@@ -22,7 +22,7 @@
 
   <body class="w3-light-grey" cz-shortcut-listen="true" id="colorPage">
   <div>
-    <div class="form-check form-switch">
+    <div class="form-check form-switch m-auto">
       <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onclick="modeNight()">
       <label class="form-check-label" for="flexSwitchCheckDefault">Modo Noturno</label>
   </div>
@@ -86,7 +86,7 @@
         <!-- Right Column -->
         <div class="w3-twothird">
           <figure>
-            <img src="img/Luan img redonda.png" alt="Imagem de Luan">
+            <img src="img/Luan img redonda.png" alt="Imagem de Luan" class="m-auto" style="width: 220px;">
             <figcaption>Luan possui 25 Anos.</figcaption>
           </figure>
           <div class="w3-container w3-card w3-white w3-margin-bottom">
@@ -214,7 +214,7 @@
     <script>
       function modeNight() {
         document.getElementById('colorPage').classList.remove('w3-light-grey')
-        document.getElementById('colorPage').classList.remove('bg-dark text-white')
+        document.getElementById('colorPage').classList.add('bg-dark text-white')
       }
     </script>
   </body>
