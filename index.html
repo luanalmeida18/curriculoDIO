@@ -7,6 +7,7 @@
       background-color: rgb(63, 62, 62);
       color: white;
     }
+
   </style>
   <head>
     <title>Luan Almeida</title>
@@ -79,7 +80,7 @@
               </p>
               <p>Português</p>
               <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-indigo" style="height:24px;width:100%">100%</div>
+                <div class="w3-round-xlarge w3-indigo" style="height:24px;width:100%">%</div>
               </div>
               <br>
             </div>
@@ -223,6 +224,7 @@
         if (colorPage.classList.contains('w3-light-grey')) {
           document.getElementById('colorPage').classList.remove('w3-light-grey')
           document.getElementById('colorPage').classList.add('night')
+          document.getElementById('colorPage').classList.remove('w3-white')
       } else {
         document.getElementById('colorPage').classList.remove('night')
         document.getElementById('colorPage').classList.add('w3-light-grey')  
