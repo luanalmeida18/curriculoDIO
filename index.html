@@ -2,13 +2,6 @@
 <!-- @falvojr: Reference article https://www.w3schools.com/howto/howto_website_create_resume.asp -->
 <!-- @falvojr: Useful link to use fontawesome (fa) icons: https://fontawesome.com/v4/icons/ -->
 <html lang="pt-BR">
-  <style>
-    .night {
-      background-color: rgb(63, 62, 62);
-      color: white;
-    }
-
-  </style>
   <head>
     <title>Luan Almeida</title>
     
@@ -23,31 +16,20 @@
     <style>
       html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
-      .w3-white,.w3-hover-white:hover {
-        color: #fff;
-        background-color: #383838
-}
-      .w3-panel{
-        padding:0.01em 16px;
-        color: white;
-      }
+      .night {
+      background-color: rgb(63, 62, 62);
+      color: white;
+    }
     </style>
     
   </head>
 
   <body class="w3-light-grey" cz-shortcut-listen="true" id="colorPage">
-  <div>
     <div class="form-check form-switch m-auto">
       <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onclick="modeNight()">
       <label class="form-check-label" for="flexSwitchCheckDefault">Modo Noturno</label>
-  </div>
-  <div>
-    <figure>
-      <img src="img/Luan img redonda.png" alt="Imagem de Luan" class="m-auto" style="width: 220px;">
-      <figcaption>Luan possui 25 Anos.</figcaption>
-    </figure>
-  </div>
-</div>
+      </div>
+    </div>
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
   
@@ -57,12 +39,12 @@
         <!-- Left Column -->
         <div class="w3-third">
   
-          <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-text-grey w3-card-4">
             <!-- @falvojr: This container has been modified to not use a profile picture. -->
             <div class="w3-container">
               <h2>Luan Almeida</h2>
             </div>
-            <div class="w3-container">
+            <div class="w3-container" id="colorCard">
               <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Junior Developer</p>
               <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"></i>Bauru-SP, Brasil</p>
               <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>luanfelipe.lfpa@gmail.com</p>
@@ -73,19 +55,19 @@
                 <b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-indigo"></i>Skills</b>
               </p>
               <p>Javascript</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-round-xlarge w3-small">
                 <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:70%">70%</div>
               </div>
               <p>Python</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-round-xlarge w3-small">
                 <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:60%">50%</div>
               </div>
               <p>Angular</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-round-xlarge w3-small">
                 <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:70%">70%</div>
               </div>
               <p>Bootstrap</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-round-xlarge w3-small">
                 <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:70%">70%</div>
               </div>
               <br>
@@ -95,7 +77,7 @@
               </p>
               <p>Português</p>
               <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-indigo" style="height:24px;width:100%">%</div>
+                <div class="w3-round-xlarge w3-indigo" style="height:24px;width:100%"></div>
               </div>
               <br>
             </div>
@@ -105,26 +87,26 @@
         </div>
   
         <!-- Right Column -->
-        <div class="w3-twothird">
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Sobre</h2>
+        <div class="w3-twothird w3-container" id="color3">
+          <div class="w3-container w3-card w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i id="color5">Sobre</h2>
             <p>Amante de tecnologia, em busca de uma oportunidade para entrar neste mundo e através da
               tecnologia mudar a vida das pessoas. Não meço esforços para aprender, nem mesmo para entregar
               aquilo que me foi proposto.</p>
           </div>
 
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <div class="w3-container w3-card w3-margin-bottom">
             <h2 class="w3-text-grey w3-padding-16">
               <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Experiências
             </h2>
-            <div class="w3-container">
+            <div>
               <h5 class="w3-opacity"><b>JBS S/A</b></h5>
               <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Março 2018 - <span class="w3-tag w3-indigo w3-round">Atual</span></h6>
               <p>Dar apoio a equipe de produção de alimentos, sendo responsável por garantir a qualidade do produto, por meio de monitoramentos e verificações durante a produção.</p>
             </div>
           </div>
   
-          <div class="w3-container w3-card w3-white">
+          <div class="w3-container w3-card">
             <h2 class="w3-text-grey w3-padding-16">
               <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Educação
             </h2>
@@ -151,7 +133,7 @@
             </div>
           </div>
 
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <div class="w3-container w3-card w3-margin-bottom" id="color4">
             <h2 class="w3-text-grey w3-padding-16">
               <i class="fa fa-git fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Projetos
             </h2>
@@ -221,7 +203,7 @@
       <!-- End Page Container -->
     </div>
   
-    <footer class="w3-container w3-indigo w3-center w3-margin-top">
+    <footer class="w3-container w3-indigo w3-center w3-margin-top" id="colorFooter">
       <p>Minhas Redes Sociais</p>
       <a href="https://github.com/luanalmeida18" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
       <a href="https://www.linkedin.com/in/luanalmeida18" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
@@ -231,23 +213,28 @@
     <script>
       function modeNight() {
         var colorPage = document.getElementById('colorPage');
+        var colorCard = document.getElementById('colorCard');
+        var colorFooter = document.getElementById('colorFooter');
+
 
         if (colorPage.classList.contains('w3-light-grey')) {
           document.getElementById('colorPage').classList.remove('w3-light-grey')
           document.getElementById('colorPage').classList.add('night')
-          if (colorPage.classList.contains('night')){
-            document.getElementsByTagName('div').classList.remove('w3-white')
-            document.getElementsByTagName('div').classList.add('night')
+          document.getElementById('colorCard').classList.remove('w3-container')
+          document.getElementById('colorCard').classList.add('night')
+          document.getElementById('colorFooter').classList.remove('w3-indigo')
           }
-      } else {
-        document.getElementById('colorPage').classList.remove('night')
-        document.getElementById('colorPage').classList.add('w3-light-grey')
-        if (colorPage.classList.contains('night')){
-            document.getElementsByTagName('div').classList.remove('night')
-            document.getElementsByTagName('div').classList.add('w3-white')
-          }
+        else if (colorPage.classList.contains('night')){
+          document.getElementById('colorPage').classList.remove('night')
+          document.getElementById('colorPage').classList.add('w3-light-grey')
+          document.getElementById('colorCard').classList.remove('night')
+          document.getElementById('colorCard').classList.add('w3-container')
+          document.getElementById('colorFooter').classList.add('w3-indigo')
+
+        }
+        
       }
-      }
+
     </script>
   </body>
 
