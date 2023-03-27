@@ -19,7 +19,7 @@
       .night {
       background-color: rgb(63, 62, 62);
       color: white;
-      padding: 0.01em 16px;
+      padding: 0.005em 8px;
       box-sizing: border-box;
       width: 100%;
     }
@@ -224,13 +224,13 @@
           document.getElementById('colorPage').classList.remove('w3-light-grey')
           document.getElementById('colorPage').classList.add('night')
           document.getElementById('colorCard').classList.remove('w3-container')
-          // document.getElementById('colorCard').classList.add('night')
+          document.getElementById('colorCard').classList.add('night')
           document.getElementById('colorFooter').classList.remove('w3-indigo')
           }
         else if (colorPage.classList.contains('night')){
           document.getElementById('colorPage').classList.remove('night')
           document.getElementById('colorPage').classList.add('w3-light-grey')
-          // document.getElementById('colorCard').classList.remove('night')
+          document.getElementById('colorCard').classList.remove('night')
           document.getElementById('colorCard').classList.add('w3-container')
           document.getElementById('colorFooter').classList.add('w3-indigo')
 
